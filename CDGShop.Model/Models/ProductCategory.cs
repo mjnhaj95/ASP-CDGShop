@@ -1,16 +1,12 @@
 ﻿using CDGShop.Model.Abstract;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CDGShop.Model.Models
 {
-    [Table("ProductCategorys")]
-    public class ProductCategory: Auditable
+    [Table("ProductCategories")]
+    public class ProductCategory : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -30,6 +26,5 @@ namespace CDGShop.Model.Models
         public bool? HomeFlag { set; get; }
 
         public virtual IEnumerable<Product> Products { set; get; }
-
     }
 }

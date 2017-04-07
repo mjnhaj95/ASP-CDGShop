@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{32A8ACFE-333F-4E33-BFE9-E074517B86F8}</ProjectGuid>
+    <ProjectGuid>{DDD6CB9B-3DE9-47CD-866E-59CAC7E29270}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CDGShop.Model</RootNamespace>
     <AssemblyName>CDGShop.Model</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -52,8 +52,9 @@
     <Compile Include="Abstract\Auditable.cs" />
     <Compile Include="Abstract\IAuditable.cs" />
     <Compile Include="Models\Footer.cs" />
-    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\IAuditable.cs" />
     <Compile Include="Models\MenuGroup.cs" />
+    <Compile Include="Models\Menu.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\Page.cs" />
@@ -61,10 +62,11 @@
     <Compile Include="Models\PostCategory.cs" />
     <Compile Include="Models\PostTag.cs" />
     <Compile Include="Models\Product.cs" />
-    <Compile Include="Models\ProductCategory .cs" />
+    <Compile Include="Models\ProductCategory.cs" />
     <Compile Include="Models\ProductTag.cs" />
     <Compile Include="Models\Slide.cs" />
     <Compile Include="Models\SupportOnline.cs" />
+    <Compile Include="Models\SystemConfig.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\VisitorStatistic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

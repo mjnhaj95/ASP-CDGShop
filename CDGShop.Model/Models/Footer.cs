@@ -7,9 +7,9 @@ namespace CDGShop.Model.Models
     public class Footer
     {
         [Key]
-        public int ID { set; get; }
+        public string ID { set; get; }
 
         [Required]
-        public string Contents { set; get; }
+        public string Content { set; get; }
     }
 }

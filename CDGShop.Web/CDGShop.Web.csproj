@@ -9,13 +9,13 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B3FA730F-AAFA-41F7-A615-1C95E8B1D93D}</ProjectGuid>
+    <ProjectGuid>{7066D63F-5F0B-4E80-8017-47B1B33EFF54}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CDGShop.Web</RootNamespace>
     <AssemblyName>CDGShop.Web</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -134,10 +134,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\PostCategoryController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -153,6 +155,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -182,6 +185,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -194,19 +200,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CDGShop.Common\CDGShop.Common.csproj">
-      <Project>{81f31fde-b6c6-48ee-9f66-600f34d9d849}</Project>
+      <Project>{1814470a-20bb-43f6-8eb0-4786087c1304}</Project>
       <Name>CDGShop.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\CDGShop.Data\CDGShop.Data.csproj">
-      <Project>{8388b5d4-bb8b-4af6-ba5e-6f50886ecccb}</Project>
+      <Project>{e8ab1087-ec84-42d1-b448-252e264def86}</Project>
       <Name>CDGShop.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\CDGShop.Model\CDGShop.Model.csproj">
-      <Project>{32a8acfe-333f-4e33-bfe9-e074517b86f8}</Project>
+      <Project>{ddd6cb9b-3de9-47cd-866e-59cac7e29270}</Project>
       <Name>CDGShop.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\CDGShop.Service\CDGShop.Service.csproj">
-      <Project>{6b35cbf0-6858-4261-85b0-e55874e88263}</Project>
+      <Project>{413a7727-8480-4a4a-aed4-f5e82e1bc695}</Project>
       <Name>CDGShop.Service</Name>
     </ProjectReference>
   </ItemGroup>
@@ -226,9 +232,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2078</DevelopmentServerPort>
+          <DevelopmentServerPort>5753</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8080/</IISUrl>
+          <IISUrl>http://localhost:5753/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

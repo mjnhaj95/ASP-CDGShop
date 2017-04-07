@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6B35CBF0-6858-4261-85B0-E55874E88263}</ProjectGuid>
+    <ProjectGuid>{413A7727-8480-4A4A-AED4-F5E82E1BC695}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CDGShop.Service</RootNamespace>
     <AssemblyName>CDGShop.Service</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,19 +40,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PostCategoryService.cs" />
+    <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CDGShop.Common\CDGShop.Common.csproj">
-      <Project>{81f31fde-b6c6-48ee-9f66-600f34d9d849}</Project>
+      <Project>{1814470a-20bb-43f6-8eb0-4786087c1304}</Project>
       <Name>CDGShop.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\CDGShop.Data\CDGShop.Data.csproj">
-      <Project>{8388b5d4-bb8b-4af6-ba5e-6f50886ecccb}</Project>
+      <Project>{e8ab1087-ec84-42d1-b448-252e264def86}</Project>
       <Name>CDGShop.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\CDGShop.Model\CDGShop.Model.csproj">
-      <Project>{32a8acfe-333f-4e33-bfe9-e074517b86f8}</Project>
+      <Project>{ddd6cb9b-3de9-47cd-866e-59cac7e29270}</Project>
       <Name>CDGShop.Model</Name>
     </ProjectReference>
   </ItemGroup>
