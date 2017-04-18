@@ -7,13 +7,13 @@ namespace CDGShop.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialDB : IMigrationMetadata
+    public sealed partial class DB : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialDB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(DB));
         
         string IMigrationMetadata.Id
         {
-            get { return "201704060207341_InitialDB"; }
+            get { return "201704151332307_DB"; }
         }
         
         string IMigrationMetadata.Source

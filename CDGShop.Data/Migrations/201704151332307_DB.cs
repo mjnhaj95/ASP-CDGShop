@@ -3,7 +3,7 @@ namespace CDGShop.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialDB : DbMigration
+    public partial class DB : DbMigration
     {
         public override void Up()
         {

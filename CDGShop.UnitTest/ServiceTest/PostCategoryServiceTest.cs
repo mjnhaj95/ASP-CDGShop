@@ -4,11 +4,7 @@ using CDGShop.Model.Models;
 using CDGShop.Service;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CDGShop.UnitTest.ServiceTest
 {
@@ -38,13 +34,11 @@ namespace CDGShop.UnitTest.ServiceTest
         public void PostCategory_Service_GetAll()
         {
             //setup method
-           
         }
 
         [TestMethod]
         public void PostCategory_Service_Create()
         {
-
         }
     }
 }
