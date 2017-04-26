@@ -1,4 +1,5 @@
 ﻿using CDGShop.Model.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CDGShop.Data
 {
-   public class CDGShopDbContext: DbContext
+    public class CDGShopDbContext : IdentityDbContext<ApplicationUser>
     {
         public CDGShopDbContext() : base("CDGShopConnection")
         {
@@ -35,11 +36,18 @@ namespace CDGShop.Data
         public DbSet<Tag> Tags { set; get; }
 
         public DbSet<VisitorStatistic> VisitorStatistics { set; get; }
+
         public DbSet<Error> Errors { set; get; }
+
+        public static CDGShopDbContext Create()
+        {
+            return new CDGShopDbContext();
+        }
 
         protected override void OnModelCreating(DbModelBuilder builder)
         {
-
+            builder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            builder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);
         }
     }
 }

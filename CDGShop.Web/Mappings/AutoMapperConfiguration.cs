@@ -1,8 +1,4 @@
-﻿using AutoMapper;
-using CDGShop.Model.Models;
-using CDGShop.Web.Models;
-
-namespace CDGShop.Web.Mappings
+﻿namespace CDGShop.Web.Mappings
 {
     public class AutoMapperConfiguration
     {
